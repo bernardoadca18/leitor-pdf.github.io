@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgb(20, 20, 20);
+        }
+        #pdf-container {
+            width: 100%;
+            height: 95%;
+            overflow-y: scroll;
+            background-color: rgb(20, 20, 20);
+        }
+        .page {
+            display: block;
+            margin-bottom: 20px;
+            background-color: rgb(20, 20, 20);
+        }
+        .page canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(20, 20, 20);
+        }
+        .page-number {
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+        }
+        #pdf-container::-webkit-scrollbar {
+            width: 0.5em; /* Ajuste a largura da barra de acordo com suas preferências */
+            background-color: transparent;
+        }
+        #pdf-container::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-container"></div>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
